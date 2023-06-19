@@ -1,0 +1,6 @@
+framework module Pods_TestovoeAvitoTests {
+  umbrella header "Pods-TestovoeAvitoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

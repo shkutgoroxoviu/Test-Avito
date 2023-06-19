@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C47A5D42A39F37700C4114F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C47A5D32A39F37700C4114F /* AppDelegate.swift */; };
+		7C47A5D62A39F37700C4114F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C47A5D52A39F37700C4114F /* SceneDelegate.swift */; };
+		7C47A5D82A39F37700C4114F /* UpgradeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C47A5D72A39F37700C4114F /* UpgradeListViewController.swift */; };
+		7C47A5DD2A39F37A00C4114F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C47A5DC2A39F37A00C4114F /* Assets.xcassets */; };
+		7C47A60A2A3A4DB900C4114F /* UpgradeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C47A6092A3A4DB900C4114F /* UpgradeListCell.swift */; };
+		7C47A6112A3B727D00C4114F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C47A6102A3B727D00C4114F /* NetworkService.swift */; };
+		7C61BBD32A3DDC8D0061926E /* UpgradeListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61BBD22A3DDC8D0061926E /* UpgradeListModel.swift */; };
+		7C61BBD52A3E11D80061926E /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61BBD42A3E11D80061926E /* List.swift */; };
+		7C61BBD72A3F55E00061926E /* UpgradeListScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61BBD62A3F55E00061926E /* UpgradeListScreenConfigurator.swift */; };
+		7C61BBD92A3F573C0061926E /* UpgradeListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61BBD82A3F573C0061926E /* UpgradeListInteractor.swift */; };
+		7C61BBDB2A3F574D0061926E /* UpgradeListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61BBDA2A3F574D0061926E /* UpgradeListPresenter.swift */; };
+		7C61BBDD2A3F58970061926E /* UpgradeListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61BBDC2A3F58970061926E /* UpgradeListInteractorProtocol.swift */; };
+		7C61BBDF2A3F58A70061926E /* UpgradeListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61BBDE2A3F58A70061926E /* UpgradeListPresenterProtocol.swift */; };
+		7C61BBE12A3F58BD0061926E /* UpgradeListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61BBE02A3F58BC0061926E /* UpgradeListViewProtocol.swift */; };
+		7C61BBE32A3F5CBE0061926E /* CustomIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C61BBE22A3F5CBE0061926E /* CustomIcon.swift */; };
+		7C73F68B2A406E1F00CA78CD /* AvitoList.json in Resources */ = {isa = PBXBuildFile; fileRef = 7C73F68A2A406E1F00CA78CD /* AvitoList.json */; };
+		7CBBA48C3EF722B35A5A3EEE /* Pods_TestovoeAvito_TestovoeAvitoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1306557468C5635E0F50EE /* Pods_TestovoeAvito_TestovoeAvitoUITests.framework */; };
+		955E257D25ADA8A71F1F7C8D /* Pods_TestovoeAvito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DAE73E2C06D71AB264837D /* Pods_TestovoeAvito.framework */; };
+		AC92AA0E07F4C6C552733572 /* Pods_TestovoeAvitoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBAB9C0BEF12E12183142B2A /* Pods_TestovoeAvitoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C47A5E72A39F37B00C4114F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C47A5C82A39F37700C4114F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C47A5CF2A39F37700C4114F;
+			remoteInfo = TestovoeAvito;
+		};
+		7C47A5F12A39F37B00C4114F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C47A5C82A39F37700C4114F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C47A5CF2A39F37700C4114F;
+			remoteInfo = TestovoeAvito;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C1306557468C5635E0F50EE /* Pods_TestovoeAvito_TestovoeAvitoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestovoeAvito_TestovoeAvitoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F35B23EC9D6759969133FF3 /* Pods-TestovoeAvito-TestovoeAvitoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestovoeAvito-TestovoeAvitoUITests.release.xcconfig"; path = "Target Support Files/Pods-TestovoeAvito-TestovoeAvitoUITests/Pods-TestovoeAvito-TestovoeAvitoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		69DAE73E2C06D71AB264837D /* Pods_TestovoeAvito.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestovoeAvito.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C47A5D02A39F37700C4114F /* TestovoeAvito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestovoeAvito.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C47A5D32A39F37700C4114F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7C47A5D52A39F37700C4114F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7C47A5D72A39F37700C4114F /* UpgradeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeListViewController.swift; sourceTree = "<group>"; };
+		7C47A5DC2A39F37A00C4114F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C47A5E12A39F37A00C4114F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C47A5E62A39F37B00C4114F /* TestovoeAvitoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestovoeAvitoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C47A5F02A39F37B00C4114F /* TestovoeAvitoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestovoeAvitoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C47A6092A3A4DB900C4114F /* UpgradeListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeListCell.swift; sourceTree = "<group>"; };
+		7C47A6102A3B727D00C4114F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		7C61BBD22A3DDC8D0061926E /* UpgradeListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeListModel.swift; sourceTree = "<group>"; };
+		7C61BBD42A3E11D80061926E /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		7C61BBD62A3F55E00061926E /* UpgradeListScreenConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeListScreenConfigurator.swift; sourceTree = "<group>"; };
+		7C61BBD82A3F573C0061926E /* UpgradeListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeListInteractor.swift; sourceTree = "<group>"; };
+		7C61BBDA2A3F574D0061926E /* UpgradeListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeListPresenter.swift; sourceTree = "<group>"; };
+		7C61BBDC2A3F58970061926E /* UpgradeListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeListInteractorProtocol.swift; sourceTree = "<group>"; };
+		7C61BBDE2A3F58A70061926E /* UpgradeListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeListPresenterProtocol.swift; sourceTree = "<group>"; };
+		7C61BBE02A3F58BC0061926E /* UpgradeListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeListViewProtocol.swift; sourceTree = "<group>"; };
+		7C61BBE22A3F5CBE0061926E /* CustomIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIcon.swift; sourceTree = "<group>"; };
+		7C73F68A2A406E1F00CA78CD /* AvitoList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AvitoList.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		825A784C02C709C76658D797 /* Pods-TestovoeAvito-TestovoeAvitoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestovoeAvito-TestovoeAvitoUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestovoeAvito-TestovoeAvitoUITests/Pods-TestovoeAvito-TestovoeAvitoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		941FCD91E30CD70EF3A29139 /* Pods-TestovoeAvitoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestovoeAvitoTests.release.xcconfig"; path = "Target Support Files/Pods-TestovoeAvitoTests/Pods-TestovoeAvitoTests.release.xcconfig"; sourceTree = "<group>"; };
+		D8C698C1E6B79E1AD7A3913C /* Pods-TestovoeAvito.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestovoeAvito.release.xcconfig"; path = "Target Support Files/Pods-TestovoeAvito/Pods-TestovoeAvito.release.xcconfig"; sourceTree = "<group>"; };
+		D9492E4B36711B34AB93E30F /* Pods-TestovoeAvitoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestovoeAvitoTests.debug.xcconfig"; path = "Target Support Files/Pods-TestovoeAvitoTests/Pods-TestovoeAvitoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DBAB9C0BEF12E12183142B2A /* Pods_TestovoeAvitoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestovoeAvitoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF317A5DAA8D3ABF3F60805B /* Pods-TestovoeAvito.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestovoeAvito.debug.xcconfig"; path = "Target Support Files/Pods-TestovoeAvito/Pods-TestovoeAvito.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C47A5CD2A39F37700C4114F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				955E257D25ADA8A71F1F7C8D /* Pods_TestovoeAvito.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47A5E32A39F37B00C4114F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC92AA0E07F4C6C552733572 /* Pods_TestovoeAvitoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47A5ED2A39F37B00C4114F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CBBA48C3EF722B35A5A3EEE /* Pods_TestovoeAvito_TestovoeAvitoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3662F42E9EA27DFBF17A8DEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69DAE73E2C06D71AB264837D /* Pods_TestovoeAvito.framework */,
+				1C1306557468C5635E0F50EE /* Pods_TestovoeAvito_TestovoeAvitoUITests.framework */,
+				DBAB9C0BEF12E12183142B2A /* Pods_TestovoeAvitoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C47A5C72A39F37700C4114F = {
+			isa = PBXGroup;
+			children = (
+				7C47A5D32A39F37700C4114F /* AppDelegate.swift */,
+				7C47A5D52A39F37700C4114F /* SceneDelegate.swift */,
+				7C47A5D22A39F37700C4114F /* TestovoeAvito */,
+				7C47A5D12A39F37700C4114F /* Products */,
+				A2284475E41585D695A9B199 /* Pods */,
+				3662F42E9EA27DFBF17A8DEA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7C47A5D12A39F37700C4114F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C47A5D02A39F37700C4114F /* TestovoeAvito.app */,
+				7C47A5E62A39F37B00C4114F /* TestovoeAvitoTests.xctest */,
+				7C47A5F02A39F37B00C4114F /* TestovoeAvitoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C47A5D22A39F37700C4114F /* TestovoeAvito */ = {
+			isa = PBXGroup;
+			children = (
+				7C61BBD62A3F55E00061926E /* UpgradeListScreenConfigurator.swift */,
+				7C47A60E2A3B6D3C00C4114F /* Services */,
+				7C47A6072A39F7B100C4114F /* Router */,
+				7C47A6062A39F7A700C4114F /* Entity */,
+				7C47A6052A39F79200C4114F /* Presenter */,
+				7C47A6042A39F78800C4114F /* Interactor */,
+				7C47A6032A39F78000C4114F /* View */,
+				7C47A5E12A39F37A00C4114F /* Info.plist */,
+				7C47A5DC2A39F37A00C4114F /* Assets.xcassets */,
+			);
+			path = TestovoeAvito;
+			sourceTree = "<group>";
+		};
+		7C47A6032A39F78000C4114F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C47A5D72A39F37700C4114F /* UpgradeListViewController.swift */,
+				7C61BBE02A3F58BC0061926E /* UpgradeListViewProtocol.swift */,
+				7C47A6082A39F9E500C4114F /* cells */,
+				7C61BBE22A3F5CBE0061926E /* CustomIcon.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C47A6042A39F78800C4114F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7C61BBD82A3F573C0061926E /* UpgradeListInteractor.swift */,
+				7C61BBDC2A3F58970061926E /* UpgradeListInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7C47A6052A39F79200C4114F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7C61BBDA2A3F574D0061926E /* UpgradeListPresenter.swift */,
+				7C61BBDE2A3F58A70061926E /* UpgradeListPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7C47A6062A39F7A700C4114F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7C61BBD22A3DDC8D0061926E /* UpgradeListModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7C47A6072A39F7B100C4114F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7C47A6082A39F9E500C4114F /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				7C47A6092A3A4DB900C4114F /* UpgradeListCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		7C47A60E2A3B6D3C00C4114F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7C73F68C2A406EC600CA78CD /* Json */,
+				7C47A60F2A3B726C00C4114F /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7C47A60F2A3B726C00C4114F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7C47A6102A3B727D00C4114F /* NetworkService.swift */,
+				7C61BBD42A3E11D80061926E /* List.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7C73F68C2A406EC600CA78CD /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				7C73F68A2A406E1F00CA78CD /* AvitoList.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		A2284475E41585D695A9B199 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF317A5DAA8D3ABF3F60805B /* Pods-TestovoeAvito.debug.xcconfig */,
+				D8C698C1E6B79E1AD7A3913C /* Pods-TestovoeAvito.release.xcconfig */,
+				825A784C02C709C76658D797 /* Pods-TestovoeAvito-TestovoeAvitoUITests.debug.xcconfig */,
+				2F35B23EC9D6759969133FF3 /* Pods-TestovoeAvito-TestovoeAvitoUITests.release.xcconfig */,
+				D9492E4B36711B34AB93E30F /* Pods-TestovoeAvitoTests.debug.xcconfig */,
+				941FCD91E30CD70EF3A29139 /* Pods-TestovoeAvitoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C47A5CF2A39F37700C4114F /* TestovoeAvito */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C47A5FA2A39F37B00C4114F /* Build configuration list for PBXNativeTarget "TestovoeAvito" */;
+			buildPhases = (
+				1A59F6F8B87CB2D903698368 /* [CP] Check Pods Manifest.lock */,
+				7C47A5CC2A39F37700C4114F /* Sources */,
+				7C47A5CD2A39F37700C4114F /* Frameworks */,
+				7C47A5CE2A39F37700C4114F /* Resources */,
+				34CAB7A39FBE509E534F6CD9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestovoeAvito;
+			productName = TestovoeAvito;
+			productReference = 7C47A5D02A39F37700C4114F /* TestovoeAvito.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C47A5E52A39F37B00C4114F /* TestovoeAvitoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C47A5FD2A39F37B00C4114F /* Build configuration list for PBXNativeTarget "TestovoeAvitoTests" */;
+			buildPhases = (
+				D0044E17DE2CCED5AAC649F8 /* [CP] Check Pods Manifest.lock */,
+				7C47A5E22A39F37B00C4114F /* Sources */,
+				7C47A5E32A39F37B00C4114F /* Frameworks */,
+				7C47A5E42A39F37B00C4114F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C47A5E82A39F37B00C4114F /* PBXTargetDependency */,
+			);
+			name = TestovoeAvitoTests;
+			productName = TestovoeAvitoTests;
+			productReference = 7C47A5E62A39F37B00C4114F /* TestovoeAvitoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7C47A5EF2A39F37B00C4114F /* TestovoeAvitoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C47A6002A39F37B00C4114F /* Build configuration list for PBXNativeTarget "TestovoeAvitoUITests" */;
+			buildPhases = (
+				1AF7F72F48FE6715F62837AB /* [CP] Check Pods Manifest.lock */,
+				7C47A5EC2A39F37B00C4114F /* Sources */,
+				7C47A5ED2A39F37B00C4114F /* Frameworks */,
+				7C47A5EE2A39F37B00C4114F /* Resources */,
+				87C51327A7C76B183D86AB09 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C47A5F22A39F37B00C4114F /* PBXTargetDependency */,
+			);
+			name = TestovoeAvitoUITests;
+			productName = TestovoeAvitoUITests;
+			productReference = 7C47A5F02A39F37B00C4114F /* TestovoeAvitoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C47A5C82A39F37700C4114F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					7C47A5CF2A39F37700C4114F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					7C47A5E52A39F37B00C4114F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 7C47A5CF2A39F37700C4114F;
+					};
+					7C47A5EF2A39F37B00C4114F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 7C47A5CF2A39F37700C4114F;
+					};
+				};
+			};
+			buildConfigurationList = 7C47A5CB2A39F37700C4114F /* Build configuration list for PBXProject "TestovoeAvito" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C47A5C72A39F37700C4114F;
+			productRefGroup = 7C47A5D12A39F37700C4114F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C47A5CF2A39F37700C4114F /* TestovoeAvito */,
+				7C47A5E52A39F37B00C4114F /* TestovoeAvitoTests */,
+				7C47A5EF2A39F37B00C4114F /* TestovoeAvitoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C47A5CE2A39F37700C4114F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C47A5DD2A39F37A00C4114F /* Assets.xcassets in Resources */,
+				7C73F68B2A406E1F00CA78CD /* AvitoList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47A5E42A39F37B00C4114F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47A5EE2A39F37B00C4114F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A59F6F8B87CB2D903698368 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestovoeAvito-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1AF7F72F48FE6715F62837AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestovoeAvito-TestovoeAvitoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34CAB7A39FBE509E534F6CD9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestovoeAvito/Pods-TestovoeAvito-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestovoeAvito/Pods-TestovoeAvito-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestovoeAvito/Pods-TestovoeAvito-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87C51327A7C76B183D86AB09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestovoeAvito-TestovoeAvitoUITests/Pods-TestovoeAvito-TestovoeAvitoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestovoeAvito-TestovoeAvitoUITests/Pods-TestovoeAvito-TestovoeAvitoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestovoeAvito-TestovoeAvitoUITests/Pods-TestovoeAvito-TestovoeAvitoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0044E17DE2CCED5AAC649F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestovoeAvitoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C47A5CC2A39F37700C4114F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C61BBDB2A3F574D0061926E /* UpgradeListPresenter.swift in Sources */,
+				7C47A5D82A39F37700C4114F /* UpgradeListViewController.swift in Sources */,
+				7C61BBD52A3E11D80061926E /* List.swift in Sources */,
+				7C61BBD72A3F55E00061926E /* UpgradeListScreenConfigurator.swift in Sources */,
+				7C61BBD32A3DDC8D0061926E /* UpgradeListModel.swift in Sources */,
+				7C47A5D42A39F37700C4114F /* AppDelegate.swift in Sources */,
+				7C61BBE12A3F58BD0061926E /* UpgradeListViewProtocol.swift in Sources */,
+				7C47A60A2A3A4DB900C4114F /* UpgradeListCell.swift in Sources */,
+				7C61BBE32A3F5CBE0061926E /* CustomIcon.swift in Sources */,
+				7C47A6112A3B727D00C4114F /* NetworkService.swift in Sources */,
+				7C47A5D62A39F37700C4114F /* SceneDelegate.swift in Sources */,
+				7C61BBDF2A3F58A70061926E /* UpgradeListPresenterProtocol.swift in Sources */,
+				7C61BBD92A3F573C0061926E /* UpgradeListInteractor.swift in Sources */,
+				7C61BBDD2A3F58970061926E /* UpgradeListInteractorProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47A5E22A39F37B00C4114F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C47A5EC2A39F37B00C4114F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C47A5E82A39F37B00C4114F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C47A5CF2A39F37700C4114F /* TestovoeAvito */;
+			targetProxy = 7C47A5E72A39F37B00C4114F /* PBXContainerItemProxy */;
+		};
+		7C47A5F22A39F37B00C4114F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C47A5CF2A39F37700C4114F /* TestovoeAvito */;
+			targetProxy = 7C47A5F12A39F37B00C4114F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7C47A5F82A39F37B00C4114F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7C47A5F92A39F37B00C4114F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7C47A5FB2A39F37B00C4114F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF317A5DAA8D3ABF3F60805B /* Pods-TestovoeAvito.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestovoeAvito/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coco.TestovoeAvito;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7C47A5FC2A39F37B00C4114F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C698C1E6B79E1AD7A3913C /* Pods-TestovoeAvito.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestovoeAvito/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coco.TestovoeAvito;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7C47A5FE2A39F37B00C4114F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9492E4B36711B34AB93E30F /* Pods-TestovoeAvitoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coco.TestovoeAvitoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestovoeAvito.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestovoeAvito";
+			};
+			name = Debug;
+		};
+		7C47A5FF2A39F37B00C4114F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 941FCD91E30CD70EF3A29139 /* Pods-TestovoeAvitoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coco.TestovoeAvitoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestovoeAvito.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestovoeAvito";
+			};
+			name = Release;
+		};
+		7C47A6012A39F37B00C4114F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 825A784C02C709C76658D797 /* Pods-TestovoeAvito-TestovoeAvitoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coco.TestovoeAvitoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestovoeAvito;
+			};
+			name = Debug;
+		};
+		7C47A6022A39F37B00C4114F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F35B23EC9D6759969133FF3 /* Pods-TestovoeAvito-TestovoeAvitoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = coco.TestovoeAvitoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestovoeAvito;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C47A5CB2A39F37700C4114F /* Build configuration list for PBXProject "TestovoeAvito" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C47A5F82A39F37B00C4114F /* Debug */,
+				7C47A5F92A39F37B00C4114F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C47A5FA2A39F37B00C4114F /* Build configuration list for PBXNativeTarget "TestovoeAvito" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C47A5FB2A39F37B00C4114F /* Debug */,
+				7C47A5FC2A39F37B00C4114F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C47A5FD2A39F37B00C4114F /* Build configuration list for PBXNativeTarget "TestovoeAvitoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C47A5FE2A39F37B00C4114F /* Debug */,
+				7C47A5FF2A39F37B00C4114F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C47A6002A39F37B00C4114F /* Build configuration list for PBXNativeTarget "TestovoeAvitoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C47A6012A39F37B00C4114F /* Debug */,
+				7C47A6022A39F37B00C4114F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C47A5C82A39F37700C4114F /* Project object */;
+}
